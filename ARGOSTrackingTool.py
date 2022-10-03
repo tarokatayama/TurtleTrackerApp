@@ -25,7 +25,7 @@ file_object.close()
 for lineString in line_list:
 
     #Check to see if the lineString is a data line
-    if lineString[0]=='#':
+    if lineString[0]=='#' or lineString[o] == 'u':
         continue
     #split lineString into a list of items
     lineData= lineString.split()
