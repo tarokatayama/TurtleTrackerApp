@@ -20,6 +20,7 @@ lineString = file_object.readline()
 
 
 #Extract one data line into a variable
+<<<<<<< HEAD
 while lineString:
 
     #Check to see if the lineString is a data line
@@ -44,3 +45,19 @@ while lineString:
     
 #close the file object
 file_object.close()
+=======
+lineString = line_list[200]
+
+#split lineString into a list of items
+lineData= lineString.split()
+
+#Assign variables to items in the lineData list
+record_id= lineData[0]
+obs_date = lineData[2]
+obs_lc = lineData[4]
+obs_lat = lineData[6]
+obs_lon = lineData[7]
+
+#print information to the user
+print(f'Record {record_id} indicates Sara was seen at {obs_lat}N, {obs_lon}W on {obs_date}')
+>>>>>>> parent of dc53abf (task 4a)
